@@ -22,13 +22,13 @@
                             <inputSpec>${generator.spec.path}</inputSpec>
                             <skipValidateSpec>true</skipValidateSpec>
                             <generatorName>typescript</generatorName>
-                            <importMappings>
-                              IntOrString=../../types
+                            <importMappings>inline_primitive_models
+                              IntOrString=../../types.ts
                             </importMappings>
                             <output>${generator.output.path}</output>
                             <configOptions>
                                 <sortParamsByRequiredFlag>true</sortParamsByRequiredFlag>
-                                <supportsES6>false</supportsES6>
+                                <supportsES6>true</supportsES6>
                                 <useObjectParameters>true</useObjectParameters>
                                 <platform>deno</platform>
                                 <fileContentDataType>Blob</fileContentDataType>

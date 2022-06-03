@@ -50,6 +50,3 @@ OPENAPI_GENERATOR_COMMIT="${OPENAPI_GENERATOR_COMMIT:-v0.6.0}"; \
 CLIENT_LANGUAGE=typescript-deno; \
 CLEANUP_DIRS=(apis models); \
 kubeclient::generator::generate_client "${OUTPUT_DIR}"
-cat << EOF > ${OUTPUT_DIR}/models/IntOrString.ts
-export type IntOrString = number | string;
-EOF

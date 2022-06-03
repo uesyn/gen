@@ -46,7 +46,7 @@ popd > /dev/null
 source "${SCRIPT_ROOT}/openapi-generator/client-generator.sh"
 source "${SETTING_FILE}"
 
-OPENAPI_GENERATOR_COMMIT="${OPENAPI_GENERATOR_COMMIT:-v5.4.0}"; \
+OPENAPI_GENERATOR_COMMIT="${OPENAPI_GENERATOR_COMMIT:-v6.0.0}"; \
 CLIENT_LANGUAGE=typescript-deno; \
 CLEANUP_DIRS=(api model); \
 kubeclient::generator::generate_client "${OUTPUT_DIR}"

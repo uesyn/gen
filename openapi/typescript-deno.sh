@@ -48,5 +48,5 @@ source "${SETTING_FILE}"
 
 OPENAPI_GENERATOR_COMMIT="${OPENAPI_GENERATOR_COMMIT:-v6.0.0}"; \
 CLIENT_LANGUAGE=typescript-deno; \
-CLEANUP_DIRS=(api model); \
+CLEANUP_DIRS=(apis models); \
 kubeclient::generator::generate_client "${OUTPUT_DIR}"

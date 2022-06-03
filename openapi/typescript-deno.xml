@@ -22,7 +22,7 @@
                             <inputSpec>${generator.spec.path}</inputSpec>
                             <skipValidateSpec>true</skipValidateSpec>
                             <generatorName>typescript</generatorName>
-                            <importMappings>inline_primitive_models
+                            <importMappings>
                               IntOrString=../../types.ts
                             </importMappings>
                             <output>${generator.output.path}</output>
